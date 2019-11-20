@@ -28,6 +28,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+a {
+	text-decoration: none;
+	color:inherit;
+}
 body {
 	line-height: 1;
 }
@@ -62,5 +66,153 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+body {
+	width:90%;
+	margin:10px auto;
+}
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+nav{
+	color:grey;
+	background:white;
+	padding: 10px 0px;
+	position: fixed;
+	top: 0;
+	width:90%;
+	z-index: 10;
+}
+nav ul{
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content:space-between;
+	align-items: center;
+}
+nav ul li{
+	/* display: inline-block;
+	margin: 0px auto 0px;
+	width: 12.5%;
+	min-width: 25px; */
+	text-align:left;
+		/* align-self: flex-end; */
+}
+
+nav ul li:last-child{
+	/* width:22%; */
+	height: auto;
+	text-align:right;
+	/* padding-left:auto; */
+}
+.services-header-img{
+	width:100%;
+}
+.top {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 70px 0px 0px;
+}
+.top-mainpage{
+	height: 60%;
+	min-height: 400px;
+	flex-flow: row wrap;
+	align-items: center;
+	text-align:center;
+}
+
+.top-subpage{
+	min-height:375px;
+	flex-flow: column nowrap;
+	text-align: left;
+	align-items: flex-start;
+}
+.top section{
+	/* display:inline-block; */
+	/* width:48%; */
+	vertical-align: middle;
+}
+.top h1{
+	font-size: 70px;
+	align-self: flex-start;
+}
+.top h2 {
+	font-size:30px;
+}
+button{
+	background:none;
+	border:1px solid grey;
+	width:50%;
+	padding:10px 0px;
+	border-radius: 5px;
+}
+.middle-img {
+	width:100%;
+}
+
+.details{
+	display:flex;
+	justify-content: space-evenly;
+	margin: 30px auto;
+}
+ .details section{
+	/* display:inline-block; */
+	margin:5px;
+}
+.border-below {
+	padding-bottom: 30px;
+	border-bottom: 2px solid black;
+}
+.contact-us section{
+	margin-bottom:20px;
+}
+.copyright{
+	text-align: center;
+	margin-top: 50px;
+	padding-bottom: 150px;
+}
+.learn-more-container{
+	min-height: 90%;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: space-evenly;
+	padding: 0px;
+}
+.learn-more{
+	margin:10px;
+	display:flex;
+	padding: 0px 20px;
+	flex-flow: column nowrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	border: 1px solid black;
+	width:calc(50% - 20px);
+	min-width: 300px;
+	max-width: 500px;
+	height: calc(400px/1.618);
+}
+.learn-more button {
+	width: 40%;
+}
+.services-bottom{
+	margin-top: 30px;
+	display:flex;
+	justify-content: space-between;
+}
+.services-info-img{
+	width:calc(50% - 20px);
+}
+.services-detail{
+	width: calc(50% - 20px);
+	display:flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+.services-detail ul{
+	list-style: square;
+	list-style-position: inside;
+	/* margin-bottom:50px; */
+}
+.services-detail ul li{
+	margin-top:3%;
+}
+
+/* Your code starts here! */
